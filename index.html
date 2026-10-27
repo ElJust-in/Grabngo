@@ -330,7 +330,7 @@ const cartTotal = () => [...cart].reduce((a, [id, q]) => a + q * byId(id).price,
 
 function renderCart() {
   const list = $("#trayItems");
-  list.innerHTML = cart.size ? "" : '<span class="tray-empty">Suelta aquí tus pastas</span>';
+  list.innerHTML = cart.size ? "" : '<span class="tray-empty">Drop your hello here</span>';
   cart.forEach((qty, id) => {
     const p = byId(id);
     const chip = document.createElement("div");
