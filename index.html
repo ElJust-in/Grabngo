@@ -203,7 +203,7 @@
         <div class="tray-items" id="trayItems"></div>
         <div class="tray-foot">
           <span>Total <b id="total">$0.00</b></span>
-          <button class="link" id="clear" type="button" data-hand-click="">Vaciar</button>
+          <button class="link" id="clear" type="button" data-hand-click="">clear</button>
         </div>
       </div>
     </aside>
@@ -360,8 +360,8 @@ $("#clear").addEventListener("click", () => { cart.clear(); renderCart(); });
 /* ---------- mensajes ---------- */
 function idleHint() {
   return mode === "hand"
-    ? "✋ Pellizca (índice + pulgar) una pasta, llévala a la bandeja y abre los dedos para soltar"
-    : "🖱️ Arrastra una pasta hasta la bandeja";
+    ? "✋ Pinch (index + thumb) a piece of pasta, take it to the cart and open your fingers to release it"
+    : "🖱️ Drag a piece of pasta to the cart";
 }
 let sayTimer = 0;
 function say(text, ok = false) {
